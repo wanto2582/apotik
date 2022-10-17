@@ -103,7 +103,8 @@ class Dashboard extends CI_Controller {
         $arraysub =[];
         foreach($subitem as $r) {   
 			$subArray['kode_item']=$r->kode_item;
-			$subArray['nama_item']=$r->nama_item;   
+			$subArray['nama_item']=$r->nama_item;  
+            $subArray['stok']=$r->stok;    
 			$subArray['total']=$r->total ." ". $r->satuan;   
             $arraysub[] =  $subArray ; 
         }   

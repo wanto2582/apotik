@@ -19,6 +19,7 @@ class Master extends CI_Controller {
         $data['total_supplier'] = $this->db->count_all('master_supplier'); 
         $data['total_kategori'] = $this->db->count_all('master_kategori'); 
         $data['total_satuan'] = $this->db->count_all('master_satuan'); 
+        $data['total_stok'] = $this->db->count_all('master_item'); 
         $data['total_item'] = $this->db->where('jenis !=','racikan')->get('master_item')->num_rows(); 
         $data['total_racikan'] = $this->db->where('jenis','racikan')->get('master_item')->num_rows(); 
         $data['total_merk'] = $this->db->count_all('master_merk'); 

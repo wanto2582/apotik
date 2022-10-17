@@ -241,6 +241,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                                 <th>No</th>
                                                                 <th>Kode Item</th>
                                                                 <th>Nama Produk</th>
+                                                                <th>Stok</th>
                                                                 <th>Total Terjual</th>
                                                             </tr>
                                                         </thead>
@@ -330,6 +331,7 @@ $.ajax({
                 datarow+="<tr><td>"+i+"</td>"; 
                 datarow+="<td>"+itemsub.kode_item+"</td>"; 
                 datarow+="<td>"+itemsub.nama_item+"</td>"; 
+                datarow+="<td>"+itemsub.stok+"</td>"; 
                 datarow+="<td>"+itemsub.total+"</td>";   
                 datarow+="</tr>"; 
             });   

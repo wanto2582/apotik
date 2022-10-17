@@ -230,6 +230,70 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                              </section>
                                              </div> </div>
 
+
+                                             <section class="panel"> 
+                        <div class="panel-body">       
+
+                            <div class="row"> 
+                            <div class="col-md-12 col-lg-12 col-xl-4">
+                                <div class="row">
+                                    <div class="col-md-4 col-xl-12">
+                                        <section class="panel">
+                                            <div class="panel-body bg-primary">
+                                                <div class="widget-summary"> 
+                                                    <div class="widget-summary-col">
+                                                        <div class="summary">
+                                                            <h4 class="title">Keuntungan Hari ini</h4>
+                                                            <div class="info">
+                                                                <strong class="amount" id="keuntungan_hari_ini"></strong>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div> 
+                                    <div class="col-md-4 col-xl-12">
+                                        <section class="panel">
+                                            <div class="panel-body bg-primary">
+                                                <div class="widget-summary"> 
+                                                    <div class="widget-summary-col">
+                                                        <div class="summary">
+                                                            <h4 class="title">Keuntungan Minggu Ini</h4>
+                                                            <div class="info">
+                                                                <strong class="amount" id="keuntungan_minggu_ini"></strong>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div> 
+                                    <div class="col-md-4 col-xl-12">
+                                        <section class="panel">
+                                            <div class="panel-body bg-primary">
+                                                <div class="widget-summary"> 
+                                                    <div class="widget-summary-col">
+                                                        <div class="summary">
+                                                            <h4 class="title">Keuntungan Bulan Ini</h4>
+                                                            <div class="info">
+                                                                <strong class="amount" id="keuntungan_hari_ini"></strong>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div> 
+                                     
+                                </div>
+                            </div>
+                            </div>
+                        
+
+                        </div>
+                    </section>
+
                     <section class="panel"> 
                         <div class="panel-body">     
                             <div class="row"> 
@@ -504,6 +568,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     <th>No</th>
                                                     <th>Kode Item</th>
                                                     <th>Nama Produk</th>
+                                                    <th>Stok</th>
                                                     <th>Total Terjual</th>
                                                 </tr>
                                             </thead>
@@ -660,6 +725,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 datarow+="<tr><td>"+i+"</td>"; 
                 datarow+="<td>"+itemsub.kode_item+"</td>"; 
                 datarow+="<td>"+itemsub.nama_item+"</td>"; 
+                datarow+="<td>"+itemsub.stok+"</td>";
                 datarow+="<td>"+itemsub.total+"</td>";   
                 datarow+="</tr>"; 
             });   
